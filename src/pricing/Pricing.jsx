@@ -4,8 +4,9 @@ const Pricing = () => {
   return (
     <div id='pricingContainer'>
       <div className="cardContainer-pricing">
-        <div className="card-pricing">
+        <div className="card-pricing" id ="gold" >
           <h1>Elite</h1>
+          <img src='/assets/gold-medal.png' alt='gold' />
           <div className="cardDetails-pricing">
             <ul>
               <li>At-center group classes</li>
@@ -15,8 +16,9 @@ const Pricing = () => {
             <button>Try for free.</button>
           </div>
         </div>
-        <div className="card-pricing">
+        <div className="card-pricing" id='siver'>
           <h1>Pro</h1>
+          <img  src='/assets/silver-medal.png' alt='silver' />
           <div className="cardDetails-pricing">
             <ul>
               <li>All PRO gyms</li>
@@ -26,8 +28,9 @@ const Pricing = () => {
             <button>Try for free.</button>
           </div>
         </div>
-        <div className="card-pricing">
+        <div className="card-pricing" id='bronze'>
           <h1>Home</h1>
+          <img  src='/assets/bronze-medal.png' alt='bronze' />
           <div className="cardDetails-pricing">
             <ul>
               <li>At home workouts</li>
