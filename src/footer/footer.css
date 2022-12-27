@@ -1,0 +1,10 @@
+.footerContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    gap: 20px;
+}
+.footerContainer >a> img{
+    height: 20px;
+}

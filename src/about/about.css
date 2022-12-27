@@ -8,11 +8,8 @@
 }
 
 #aboutContainer> .about-image {
-    position: absolute;
     height: 70vh;
     width: 50%;
-    left: 7%;
-    top: 17%;
     border-radius: 10px;
     box-shadow: 2px 1px 10px black ;
 }
@@ -27,16 +24,18 @@
     object-position: center;
 }
 
-
-
 #aboutContainer> .about-details {
-    position: absolute;
-    right: 7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
 #aboutContainer> .about-details>ol {
     color: white;
     margin: 10px;
 }
+
 #aboutContainer> .about-details>ol> li {
     color: white;
     margin: 100px;
@@ -45,19 +44,36 @@
 }
 
 #aboutContainer> .about-details>button {
-    position: absolute;
     background-color: white;
     padding: 12px;
     width: 150px;
     border-radius: 10px;
     border: 1px solid white;
     transition: 0.5s;
-    bottom: 0.5%;
-    right: 40%;
     box-shadow: 1px 1px 10px black;
 }
+
 #aboutContainer> .about-details>button:hover {
     background-color: black;
     color: white;
     border: 1px solid black;
+}
+
+
+@media screen and (max-device-width:769px){
+
+    #aboutContainer{
+        flex-direction: column;
+    }
+    #aboutContainer> .about-image {
+        height: 40%;
+        width: 40%;
+        border-radius: 10px;
+        box-shadow: 2px 1px 10px black ;
+    }
+    #aboutContainer> .about-details>ol> li {
+        color: white;
+
+    }
+    
 }

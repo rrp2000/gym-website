@@ -5,6 +5,7 @@ import Homepage from './Homepage/Homepage';
 import About from './about/About';
 import Pricing from './pricing/Pricing';
 import Program from './program/Program';
+import Footer from './footer/Footer';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
     <Program />
     <Pricing />
     <About />
+    <Footer />
     </Router> 
   );
 }
