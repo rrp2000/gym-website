@@ -1,19 +1,29 @@
-import React from 'react'
-import style from "./navbar.module.css"
+import React, { useState } from 'react'
+import "./navbar.css"
 const Navbar = () => {
+  let [isClicked, setIsClicked] = useState(false)
+
+  let handleClick=(event)=>{
+    setIsClicked(!isClicked)
+  }
   return (
-    <header className={style.navbarContainer}>
+    <header className="navbarContainer">
         <div className='logo'>
-        <a href='#homepageContainer'><img src='https://t4.ftcdn.net/jpg/03/70/09/35/360_F_370093526_mJLYjlxn5Jb2pMsiQeyE7PMMnCp7NY8z.jpg' alt='logo' /></a>
+        <a href='#homepageContainer'><h1>Gym 101</h1></a>
             
         </div>
-        <div className={style.navLinks}>
+        <div className="navLinks">
         {/* about , home , pricing , program */}
-            <a href="#homepageContainer">home</a>
-            <a href="#programContainter">program</a>
-            <a href="#pricingContainer">pricing</a>
-            <a href="#aboutContainer">about</a>
-            
+            <label onClick={handleClick}>
+            {isClicked && <img id='close' src="assets/close.png" alt= "close"/> }
+            {!isClicked && <img id='menu' src="assets/hamburger.png" alt= "close"/> }
+            </label>
+            <div className={isClicked?"menu-active":"menu-not-active"}>
+              <a href="#homepageContainer">home</a>
+              <a href="#programContainter">program</a>
+              <a href="#pricingContainer">pricing</a>
+              <a href="#aboutContainer">about</a>
+            </div>
         </div>
     </header>
   )

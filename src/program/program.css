@@ -1,7 +1,37 @@
 #programContainter{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.cardContainer{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 100vh;
+    width: 80%;
+    gap:2rem
 }
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px black;
+}
+
+.cardImage{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.cardDetails{
+    align-items: center;
+    padding: 5px;
+}
+

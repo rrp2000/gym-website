@@ -1,3 +1,4 @@
+
 #homepageContainer{
     display: flex;
     flex-direction: column;
@@ -7,22 +8,24 @@
     height: 100vh;
     background-image: url("../../public/assets/wallpaperflare.com_wallpaper.jpg");
     background-repeat: no-repeat; 
-    background-size:cover;   
-    overflow: hidden;
+    background-size:cover; 
+    background-position: center; 
+    transition: 0.5s; 
 }
 #homepageContainer p{
     align-self: flex-start;
-    width: 67%;
+    width: 70%;
     color: white;
     font-size: 600%;
-
+    margin-left: 20px;
+    transition: 0.5s; 
 }
 #homepageContainer button{
     background-color: white;
     padding: 10px;
     width: 150px;
     border-radius: 6px;
-    border: 1px ;
+    border: 1px solid white;
     transition: 0.5s;
     margin-top: 100px;
     
@@ -32,7 +35,54 @@
 
     background-color: black;
     color: white;
+    border: 1px solid black;
     
 }
 
+@media screen and (min-device-width:0px) and (max-device-width:320px){
+    #homepageContainer p{
+        align-self: flex-start;
+        width: 70%;
+        font-size: 150px;
+    }
+    #homepageContainer button{
+        width: 300px;
+        font-size: 40px;
+        padding: 20px;
+        margin-top: 300px;
+    }
+    #homepageContainer button:hover{
+        background-color: white;
+        color: black;
+    }
+}
+@media screen and (min-device-width:320px) and (max-device-width:425px){
+    #homepageContainer p{
+        font-size: 130px;
+    }
+    #homepageContainer button{
+        margin-top: 300px;
+        font-size: 30px;
+        width: 280px;
+        padding: 25px;
+    }
+    #homepageContainer button:hover{
+        background-color: white;
+        color: black;
+    }
+}
+@media screen and (min-device-width:425px) and (max-device-width:768px){
+    #homepageContainer p{
+        font-size: 100px;
+    }
+    #homepageContainer button{
+        font-size: 20px;
+        width: 200px;
+        padding: 15px;
+    }
+    #homepageContainer button:hover{
+        background-color: white;
+        color: black;
+    }
+}
 
