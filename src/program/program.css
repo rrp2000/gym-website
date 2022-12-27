@@ -3,6 +3,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: rgb(233, 233, 233);
 }
 
 
@@ -19,18 +20,20 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 200px;
+    width: 300px;
     border-radius: 10px;
     box-shadow: 1px 1px 10px black;
 }
 
 .cardImage{
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     border-radius: 10px;
 }
 
 .cardDetails{
+    display: flex;
+    height: 100px;
     align-items: center;
     padding: 5px;
 }

@@ -17,11 +17,21 @@ const Program = () => {
         <div className="card">
           <img
             className="cardImage"
-            src="assets/bench-press-56a83ae23df78cf7729d2c33.jpg"
+            src="assets/pexels-pixabay-416754.jpg"
             alt=" workout"
           />
           <div className="cardDetails">
-            Best of the best traing facilities.
+            Best of the best trainers.
+          </div>
+        </div>
+        <div className="card">
+          <img
+            className="cardImage"
+            src="assets/mark-bertulfo-XKimW0pke6w-unsplash.jpg"
+            alt=" workout"
+          />
+          <div className="cardDetails">
+            Best of the best equipments.
           </div>
         </div>
       </div>
