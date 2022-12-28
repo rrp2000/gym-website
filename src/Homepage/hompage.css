@@ -1,6 +1,6 @@
 
 #homepageContainer{
-    position: relative;
+    /* position: relative; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -12,7 +12,6 @@
     background-size:cover; 
     background-position: center; 
     transition: 0.5s; 
-    top: 10vh;
 }
 #homepageContainer p{
     align-self: flex-start;

@@ -9,13 +9,13 @@
 
 .cardContainer-pricing{
     display: flex;
-    width: 80%;
+    max-width: 80%;
+    height: 80%;
     height: fit-content;
     align-items: center;
     justify-content: center;
-    gap: 50px;
-}
 
+}
 .card-pricing{
     position: relative;
     display: flex;
@@ -23,24 +23,27 @@
     align-items:center;
     justify-content: space-around;
     width: 400px;
-    padding: 20px;
+    padding: 10px;
     background-color: aliceblue;
-    height: 50vh;
+    height: 400px;
     border-radius: 10px;
     box-shadow: 1px 1px 10px black;
     transition: 0.5s;
     transform: scale(60%);
+    z-index: 0;
 }
 
 .card-pricing>h1{
     transition: 0.5s;
     margin-top:150px ;
+    z-index: 2;
 }
 
 .card-pricing>img{
     position: absolute;
     top: 0;
     right: 0;
+    z-index: 0;
 }
 
 .cardDetails-pricing{
@@ -59,6 +62,10 @@
     width: 300px;
     margin-left:40px ;
     font-size: 15px;
+    z-index: 2;
+}
+.cardDetails-pricing>ul{
+    z-index: 2;
 }
 .cardDetails-pricing>button{
     padding: 10px;
@@ -74,27 +81,138 @@
     color: black;
     background-color: white;
 }
-.card-pricing:hover{
-    transform: scale(120%);
-}
 
-.card-pricing:hover > .cardDetails-pricing{
-    opacity: 1;    
+
+
+@media screen and (max-device-width:320px) {
+    .cardContainer-pricing{
+        flex-direction: column;
+        gap: 4rem;
+    }
+    .card-pricing{
+        width: 500px;
+        height: 500px;
+        transform: scale(100%);
+        margin: 100px;
+    }
+    .cardDetails-pricing{
+        opacity: 1;
+    }
+    .card-pricing>h1{
+        transition: 0.5s;
+        margin-top:0px ;
+        z-index: 1;
+    }
+    .cardDetails-pricing>ul>li{
+        padding: 10px;
+        width: 400px;
+        margin-left:40px ;
+        font-size: 25px;
+        z-index: 1;
+    }
+    
 }
-.card-pricing:hover >h1{
-    transition: 0.5s;
-    margin-top:0px ;
+@media screen and (min-device-width:320px) and (max-device-width:425px) {
+    .cardContainer-pricing{
+        flex-direction: column;
+        gap: 4rem;
+    }
+    .card-pricing{
+        width: 400px;
+        height: 400px;
+        transform: scale(100%);
+        margin: 100px;
+    }
+    .cardDetails-pricing{
+        opacity: 1;
+    }
+    .card-pricing>h1{
+        transition: 0.5s;
+        margin-top:0px ;
+        z-index: 1;
+    }
+    .cardDetails-pricing>ul>li{
+        padding: 10px;
+        width: 200px;
+        margin-left:40px ;
+        font-size: 15px;
+        font-size: 15px;
+    }
+    
 }
-.card-pricing:hover>img{
-    top: 0px;
-    right: 0px;
+@media screen and (min-device-width:425px) and (max-device-width:768px) {
+    .cardContainer-pricing{
+        flex-direction: column;
+        gap: 3rem;
+    }
+    .card-pricing{
+        width: 300px;
+        height: 300px;
+        transform: scale(100%);
+    }
+    .cardDetails-pricing{
+        opacity: 1;
+    }
+    .card-pricing>h1{
+        transition: 0.5s;
+        margin-top:0px ;
+        z-index: 1;
+    }
+    
 }
-#gold:hover{
-    background-color: rgb(244, 207, 0);
+@media screen and (min-device-width:768px) and (max-device-width:1440px) {
+    .cardContainer-pricing{
+        gap: 3rem;
+    }
+    .card-pricing{
+        width: 250px;
+        height: 325px;
+        transform: scale(100%);
+    }
+    .cardDetails-pricing{
+        opacity: 1;
+    }
+    .card-pricing>h1{
+        transition: 0.5s;
+        margin-top:0px ;
+        z-index: 1;
+    }
+    .card-pricing>ul{
+        transition: 0.5s;
+        margin-top:0px ;
+        width: 100px;
+        z-index: 1;
+    }
+    .cardDetails-pricing>ul>li{
+        padding: 10px;
+        width: 200px;
+        margin-left:40px ;
+        font-size: 15px;
+    }
 }
-#silver:hover{
-    background-color:rgb(115, 115, 115);
-}
-#bronze:hover{
-    background-color:rgb(129, 103, 36);
+@media screen and (min-device-width:1440px) {
+    .card-pricing:hover{
+        transform: scale(120%);
+    }
+    
+    .card-pricing:hover > .cardDetails-pricing{
+        opacity: 1;    
+    }
+    .card-pricing:hover >h1{
+        transition: 0.5s;
+        margin-top:0px ;
+    }
+    .card-pricing:hover>img{
+        top: 0px;
+        right: 0px;
+    }
+    #gold:hover{
+        background-color: rgb(244, 207, 0);
+    }
+    #silver:hover{
+        background-color:rgb(115, 115, 115);
+    }
+    #bronze:hover{
+        background-color:rgb(171, 124, 4);
+    }
 }
