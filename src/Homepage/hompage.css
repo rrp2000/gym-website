@@ -14,12 +14,29 @@
     transition: 0.5s; 
 }
 #homepageContainer p{
+    position: relative;
     align-self: flex-start;
     width: 70%;
     color: white;
     font-size: 600%;
     margin-left: 20px;
     transition: 0.5s; 
+    text-shadow: 6px 3px 10px black;
+    animation: upDown 5s infinite;
+}
+
+@keyframes upDown {
+
+    0%{
+        transform: translatey(-5px);
+    }
+    50%{
+        transform: translateY(5px);
+    }
+    100%{
+        transform: translateY(-5px);
+    }
+    
 }
 #homepageContainer button{
     background-color: white;

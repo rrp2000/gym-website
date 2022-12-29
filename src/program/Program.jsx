@@ -3,6 +3,7 @@ import "./program.css";
 const Program = () => {
   return (
     <div id="programContainter">
+      <h2>Expore what we provide...</h2>
       <div className="cardContainer">
         <div className="card">
           <img

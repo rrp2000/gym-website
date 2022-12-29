@@ -1,10 +1,14 @@
 #programContainter{
-    height: 100vh;
+    height: 110vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: rgb(233, 233, 233);
+}
+#programContainter>h2{
+    margin-top: 10vh;
+    padding-top: 30px;
 }
 
 .cardContainer{
@@ -71,7 +75,7 @@
     .cardContainer{
         flex-direction: column;
         gap:2rem;
-        flex-wrap: wrap;
+        /* flex-wrap: wrap; */
         width: 95%;
     }
     .card{
@@ -89,7 +93,7 @@
         margin-top: 10%;
         flex-direction: row;
         gap:2rem;
-        flex-wrap: wrap;
+        /* flex-wrap: wrap; */
         height: 80%;
         gap: 1rem;
     }

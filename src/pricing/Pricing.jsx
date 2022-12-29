@@ -3,6 +3,7 @@ import "./pricing.css"
 const Pricing = () => {
   return (
     <div id='pricingContainer'>
+      <h2>See what best fit your needs....</h2>
       <div className="cardContainer-pricing">
         <div className="card-pricing" id ="gold" >
           <h1>Elite</h1>
