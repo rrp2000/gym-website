@@ -113,6 +113,10 @@
         margin-left:40px ;
         font-size: 25px;
         z-index: 1;
+        font-size: 30px;
+    }
+    #pricingContainer > h2{
+        font-size: 40px;
     }
     
 }

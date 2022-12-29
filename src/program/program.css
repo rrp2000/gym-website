@@ -53,6 +53,7 @@
     width: 300px;
     height: 300px;
     border-radius: 10px;
+    transition: 0.5s;
 }
 
 .cardDetails{
@@ -84,6 +85,17 @@
     .card:hover{
         transform: scale(110%);
         z-index: 1;
+    }
+    .cardDetails{
+        font-size: 30px;
+    }
+    #programContainter>h2{
+        font-size: 40px;
+    }
+    .buttonContainer >button{
+        padding: 30px;
+        border-radius: 100px;
+        font-size: 30px;
     }
 }
 @media screen and (min-device-width:425px) and (max-device-width:768px) {
