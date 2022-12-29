@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 import "./navbar.css"
 const Navbar = () => {
   let [isClicked, setIsClicked] = useState(false)
@@ -9,7 +10,8 @@ const Navbar = () => {
   return (
     <header className="navbarContainer">
         <div className='logo'>
-        <a href='#homepageContainer'><h1>Gym 101</h1></a>
+        {/* <a href='#homepageContainer'></a> */}
+        <Link to="/"><h1>Gym 101</h1></Link>
             
         </div>
         <div className="navLinks">
@@ -19,10 +21,10 @@ const Navbar = () => {
             {!isClicked && <img id='menu' src="assets/hamburger.png" alt= "close"/> }
             </label>
             <div className={isClicked?"menu-active":"menu-not-active"}>
-              <a href="#homepageContainer">home</a>
-              <a href="#programContainter">program</a>
-              <a href="#pricingContainer">pricing</a>
-              <a href="#aboutContainer">about</a>
+              <a href="#homepageContainer">Home</a>
+              <a href="#programContainter">Program</a>
+              <a href="#pricingContainer">Pricing</a>
+              <a href="#aboutContainer">About</a>
             </div>
         </div>
     </header>
