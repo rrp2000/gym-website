@@ -15,7 +15,7 @@ const Program = () => {
           <img
             // style={{width:"304px",height:"300px"}}
             className="cardImage"
-            src={show==="mentors"?"assets/mentor1 (1).jpg":"assets/facilities1.jpg"}
+            src={show==="mentors"?"assets/mentor1.jpg":"assets/facilities1.jpg"}
             alt=" workout"
           />
           <div className="cardDetails">
@@ -26,7 +26,7 @@ const Program = () => {
           <img
             // style={{width:"304px",height:"300px"}}
             className="cardImage"
-            src={show==="mentors"?"assets/mentor2 (1).jpg":"assets/facilities3.jpg"}
+            src={show==="mentors"?"assets/mentor2.jpg":"assets/facilities3.jpg"}
             alt=" workout"
           />
           <div className="cardDetails">
@@ -37,7 +37,7 @@ const Program = () => {
           <img
             // style={{width:"304px",height:"300px"}}
             className="cardImage"
-            src={show==="mentors"?"assets/mentor3 (1).jpg":"assets/facilities2.jpg"}
+            src={show==="mentors"?"assets/mentor3.jpg":"assets/facilities2.jpg"}
             alt=" workout"
           />
           <div className="cardDetails">
